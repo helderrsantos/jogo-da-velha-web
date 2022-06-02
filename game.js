@@ -14,14 +14,15 @@ for(var i=0;i<9;i++) {
 		//se a casa estiver vazia e ninguém tiver vencido a partida
 		if( (event.target.value=='_') && (vencedor=='_')) {
 			event.target.value=jogador; //preenche a casa com X ou O
-			event.target.style.color='#bc5e00'; //torna o valor da casa visível
 
+			event.target.style.backgroundImage= jogador === "H" ? "url('./imagens/harry.jpg')" : "url('./imagens/voldemort.jpg')";
+			event.target.style.backgroundSize='cover';
+			
 			trocarJogador(); //função que troca a vez do jogador, a ser definida depois
 
 			vencedor = vitoria(); //Executa a função vitoria() que defineremos depois, ela retorna o vencedor da partida, caso exista.
 
 			//se o vencedor existe, imprime
-			
 		}
 	});
 }
