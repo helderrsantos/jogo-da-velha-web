@@ -2,31 +2,38 @@ body {
     background-image: url(./imagens/hogwarts.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    text-align: center;
+    margin-left: 100px;
     font-family: Verdana, Helvetica, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.4em;
+    color:rgba(0, 0, 0, 0.747);
+    text-align: center;
+    display: inline-block;
 }
 
 input {
-    background-color: rgba(255, 255, 255, 0.144);
+    background-color: #ffffff25;
     font-size: 6vw;
-    width: 12vw;
-    height:12vw;
+    width: 10vw;
+    height:10vw;
     margin: 0;
     color: rgba(0, 0, 0, 0);
     margin: 3px;
-}
-
-#jogador {
-    display: inline;
-    
+    border-radius: 7px;
 }
 
 #reiniciar {
     margin-top: 2%;
     width: 10vw;
-    height:6vw;
-    font-size: 1em;
+    height:3vw;
+    font-size: 15px;
     color: black;
 }
+
+#reiniciar:hover{
+    background-color: rgba(255, 0, 0, 0.932);
+    color:white;
+    font-style: italic;
+}
+
+
 
