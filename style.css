@@ -1,8 +1,8 @@
 body {
     background-image: url(./imagens/hogwarts.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    margin-left: 100px;
+    background-size:cover;
+    margin-left: 20px;
     font-family: Verdana, Helvetica, sans-serif;
     font-size: 1.4em;
     color:rgba(0, 0, 0, 0.747);
@@ -35,5 +35,24 @@ input {
     font-style: italic;
 }
 
+#res{
+    font-size: 30px;
+    color: black;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top:0px;
+    margin-left: 180%;
+    animation: effect;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction:alternate-reverse;
+}
 
+@keyframes effect{
+    0%{color: aqua;}
+    20%{color: blue;}
+    50%{color: red;}
+    80%{color: white;}
+    100%{color:yellow;}
+}
 

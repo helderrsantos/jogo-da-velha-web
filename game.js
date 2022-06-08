@@ -11,18 +11,17 @@ for(var i=0;i<9;i++) {
 		//se a casa estiver vazia e ninguém tiver vencido a partida
 		if( (event.target.value=='_') && (vencedor=='_')) {
 			event.target.value=jogador; //preenche a casa com H ou V
-
-			event.target.style.backgroundImage= jogador === "H" ? "url('./imagens/harry.jpg')" : "url('./imagens/voldemort.jpg')";
+			event.target.style.backgroundImage= jogador === "Harry" ? "url('./imagens/harry.jpg')" : "url('./imagens/voldemort.jpg')";
 			event.target.style.backgroundSize='100% 100%';
 			event.target.style.backgroundRepeat='no-repeat';
 			
 			trocarJogador(); //função que troca a vez do jogador, a ser definida depois
 
-			vencedor = vitoria(); //Executa a função vitoria() que defineremos depois, ela retorna o vencedor da partida, caso exista.
+			vencedor = document.getElementById("res").innerHTML= vitoria(); //Executa a função vitoria() que defineremos depois, ela retorna o vencedor da partida, caso exista.
 
 			//se o vencedor existe, imprime
-		}
-	});
+		
+}});
 }
 
 
@@ -34,6 +33,7 @@ b_reiniciar.addEventListener('click', (event) => {
 		casas[i].style.backgroundColor='#ffffff25'; //Torna o fundo branco
 		casas[i].style.backgroundImage=null;
 		casas[i].style.borderColor='#000';
+		vencedor = document.getElementById("res").innerHTML=null;
 	}
 
 	vencedor = '_'; //Reseta o vencedor
@@ -44,10 +44,11 @@ b_reiniciar.addEventListener('click', (event) => {
 //Usa uma função que decide aleatoriamente o jogar a fazer a primeira jogada
 var sortearJogador = function() {
 	if(Math.floor(Math.random() * 2)==0) {
-		jogador = "H"; //define o jogador H como atual
+		jogador = "Harry"; //define o jogador H como atual
+		
 		
 	}else{
-		jogador = "V";//define o jogador V como atual
+		jogador = "Voldemort";//define o jogador V como atual
 		
 	}
 }
@@ -56,12 +57,12 @@ sortearJogador(); //Escolhe aleatoriamento o jogador inicial
 
 //Alterna a vez entre os jogadores H e V
 var trocarJogador = function() {
-	if(jogador=='V') {
-		jogador='H';
+	if(jogador=='Voldemort') {
+		jogador='Harry';
 		
 		
 	}else{
-		jogador='V';
+		jogador='Voldemort';
 		
 	}
 }
