@@ -7,7 +7,12 @@ body {
     font-size: 1.4em;
     color:rgba(0, 0, 0, 0.747);
     text-align: center;
+}
+
+.container{
     display: inline-block;
+    background-size: cover;
+    float:inline-end;
 }
 
 input {
@@ -19,6 +24,10 @@ input {
     color: rgba(0, 0, 0, 0);
     margin: 3px;
     border-radius: 7px;
+    transform: 0.5s;
+}
+input:hover{
+    transform:scale(1.07);
 }
 
 #reiniciar {
@@ -36,12 +45,11 @@ input {
 }
 
 #res{
-    font-size: 30px;
+    font-size: 40px;
     color: black;
+    margin-top: 0;
     font-style: italic;
     font-weight: bolder;
-    margin-top:0px;
-    margin-left: 180%;
     animation: effect;
     animation-iteration-count: infinite;
     animation-duration: 5s;
@@ -49,10 +57,10 @@ input {
 }
 
 @keyframes effect{
-    0%{color: aqua;}
-    20%{color: blue;}
-    50%{color: red;}
-    80%{color: white;}
+    0%{color: rgba(184, 172, 3, 0.493);}
+    20%{color: rgba(146, 167, 29, 0.795);}
+    50%{color: rgba(189, 126, 8, 0.863);}
+    80%{color: rgba(190, 115, 16, 0.89);}
     100%{color:yellow;}
 }
 

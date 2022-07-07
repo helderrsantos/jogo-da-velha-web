@@ -17,7 +17,7 @@ for(var i=0;i<9;i++) {
 			
 			trocarJogador(); //função que troca a vez do jogador, a ser definida depois
 
-			vencedor = document.getElementById("res").innerHTML= vitoria(); //Executa a função vitoria() que defineremos depois, ela retorna o vencedor da partida, caso exista.
+			vencedor = document.getElementById("res").innerHTML = vitoria(); //Executa a função vitoria() que defineremos depois, ela retorna o vencedor da partida, caso exista.
 
 			//se o vencedor existe, imprime
 		
@@ -38,7 +38,6 @@ b_reiniciar.addEventListener('click', (event) => {
 
 	vencedor = '_'; //Reseta o vencedor
 
-	sortearJogador(); //Escolhe aleatoriamente qual jogador irá começar
 });
 
 //Usa uma função que decide aleatoriamente o jogar a fazer a primeira jogada
