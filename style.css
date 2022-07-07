@@ -12,7 +12,6 @@ body {
 .container{
     display: inline-block;
     background-size: cover;
-    float:inline-end;
 }
 
 input {
@@ -25,6 +24,7 @@ input {
     margin: 3px;
     border-radius: 7px;
     transform: 0.5s;
+    border-color: black;
 }
 input:hover{
     transform:scale(1.07);
@@ -39,7 +39,7 @@ input:hover{
 }
 
 #reiniciar:hover{
-    background-color: rgba(255, 0, 0, 0.932);
+    background-color: rgba(255, 123, 0, 0.822);
     color:white;
     font-style: italic;
 }
