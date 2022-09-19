@@ -14,3 +14,7 @@ Projeto simples, com alguns detalhes:
 
 Faltam algumas melhorias, mas espero que gostem!
 
+## Tecnologias Utilizadas
+
+HTML, CSs e JS
+
