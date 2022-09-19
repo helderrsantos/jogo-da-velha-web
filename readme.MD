@@ -16,5 +16,5 @@ Faltam algumas melhorias, mas espero que gostem!
 
 ## Tecnologias Utilizadas
 
-HTML, CSs e JS
+HTML, CSS e JS
 
